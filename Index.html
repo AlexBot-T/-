@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="src/request.js"></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="wrapper">
+            <section class="requests">
+                <div class="requests__form-access">
+                    <input id="idInstance" name="id" type="text" class="input" placeholder="idInstance">
+                    <input id="apiTokenInstance" name="token" type="text" class="input" placeholder="apiTokenInstance">
+                </div>
+                <div class="requests__get-data">
+                    <button onclick="getSettings()">getSettings</button>
+                    <button onclick="getStateInstance()">getStateInstance</button>
+                </div>
+                <div class="requests__message">
+                    <input type="text" id="phoneNumber" placeholder="phoneNumber">
+                    <input type="text" id="message" placeholder="textMessage">
+                    <button onclick="sendMessage()">sendMessage</button>
+                </div>
+                <div class="requests__send-file">
+                    <input type="text" id="phoneNumberFile" placeholder="phoneNumber">
+                    <input type="text" id="file" placeholder="uploadImgLink">
+                    <button onclick="sendFileByUrl()">sendFileByUrl</button>
+                </div>
+            </section>
+            <section class="output">
+                <h1>
+                    <p>Ответ</p>
+                </h1>
+                <div class="output__result-page">
+                    <output id="result"></output>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

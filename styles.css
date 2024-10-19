@@ -1,0 +1,65 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+main {
+    margin: 30px;
+    max-width: 1280px;
+
+}
+.wrapper {
+    display: flex;
+    gap: 50px;
+}
+.requests {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+input {
+    width: 250px;
+    height: 30px;
+    padding: 0px;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
+    color: #949494;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+
+}
+.requests > div {
+    display: flex;
+    flex-direction: column;
+}
+.requests button {
+    width: 250px;
+    height: 50px;
+    border: 1px solid #777777;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.requests button:hover {
+    background-color: #c1dcc0;
+    transition: 0.5s;
+}
+.requests__form-access, .requests__message, .requests__send-file {
+    gap: 15px;
+}
+.requests__get-data {
+    gap: 25px;
+}
+
+.output {
+}
+.output h1, p {
+    margin: 0;
+}
+.output__result-page {
+    width: 400px;
+    min-height: 600px;
+    border: 1px black solid;
+    margin-top: 20px;
+    border-radius: 3px;
+}
